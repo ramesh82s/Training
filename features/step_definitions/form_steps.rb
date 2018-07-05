@@ -1,7 +1,8 @@
 puts "Executing #{__FILE__}"
 # require 'watir' - declared in env.rb
 When(/^the user navigates to the rol link$/) do
-  @browser = Watir::Browser.new :chrome
+  @browser = Watir::Browser.new :firefox
+  @browser
   # @current_page.goto("https://www.huntington.com/")
   # @browser = Watir::Browser.new :chrome
   #  visit_page(RolLoginPage)

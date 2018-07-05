@@ -1,4 +1,5 @@
 
+puts a &&=12
 def sample (* test)
   puts "The num ber of param eters is #{test.length}"
   for i in 0...test.length

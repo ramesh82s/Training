@@ -1,0 +1,123 @@
+--------------------------------------------------
+Basic Ruby
+--------------------------------------------------
+01. Identifiers
+    a. name of variable, constants, class, object, moduule and methods
+04. Variables
+     a. Local Variables
+     b. Instance Variable
+     c. Class Variable
+     d. Global Variable
+     e. CONSTANTS
+     f. Pseudo Variable
+05. Literals
+     a. Integer Numbers
+     b. Float Numbers
+     c. String
+06. Black slash Notations
+07. Array
+08. Hash
+09. Operators
+     a. Arithmetic Operators
+     b. Comparison Operators
+     c. Assignment Operators
+     d. Parallel Assignment
+     e. Bitwise Operators
+     f. Logical Operators
+     g. Ternary Operator
+     h. Range Operators
+        Ranges as Sequences, Ranges as Conditions, Ranges as Intervals
+     i. defined? Operators
+     j. Dot "." and Double Colon "::" Operators
+     k. Ruby Operators Precedence
+10. Comments
+     a.  #, =begin and =end
+11. if..else, unless, case
+     a. if--else, if modifier
+     b. unless, unless modifier
+     c. case statement
+12. Loops
+     a. while, while modifier
+     b. until, until modifier
+     c. for statement
+     d. break statement
+     e. next statement
+     f. redo statement
+     g. retry statement
+13. Methods
+     a. return statement
+     b. length - Variable Number of Parameters
+     c. instance method
+     e. class method
+     f. alias statement
+     g. undef method-name
+     h. constructor method
+14. Blocks
+     a. yield statement
+     b. call statement
+     b. BEGIN, END
+15. Modules
+     a. require
+     b. mixin - include, extent
+16. Date and Time
+     a. Current Date and Time
+     b. Components of a Date & Time
+     c. Time.utc, Time.gm and Time.local Functions
+     d. Timezones and Daylight Savings Time
+     e. Formatting Times and Dates
+     f. Time Formatting Directives
+     g. Time Arithmetic
+17. collections - Objects that store a group of data members are called collections. In Ruby, arrays and hashes can be termed collections.
+18. Iterators
+     a. each
+     b. collect
+19. Exception
+     a. begin, end
+     b. rescue
+     c. ensure
+     d. retry
+     e. raise
+     f. exception
+     g. else
+     h. catch and throw
+--------------------------------------------------
+Advanced Ruby
+--------------------------------------------------
+20. Object-Oriented
+     a. Object
+     b. Initialize/Constructor Method
+     c. Accessor and Setter method
+     d. Instance method
+     e. class method
+     f. to_s method
+     g. access control
+        public, private and protected methods
+     h. inheritance
+     i. method Overriding
+     j. Operator Overloading
+     k. freezing objects
+     l.  class constant
+     m. allocate statement to create object
+     n. self - class information
+21. Regular Expressions
+     a. modifier
+     b. regular expression patterns (+ ? . * ^ $ ( ) [ ] { } | \)
+     c. Literal Characters
+     d. Character Classes
+     e. Special Character Classes
+     f. Repetition Cases
+     g. Non-greedy Repetition
+     h. Grouping with Parentheses
+     i. Back References
+     j. Alternatives
+     k. Anchors
+     l. Special Syntax with Parentheses
+     m. Search and Replace
+22.  Build-in Functions
+     a. sprintf
+     b. test
+23.  Predefined Variables (39 variables)
+     a. $FILENAME, $LOAD_PATH, etc..
+24.  Predefined Constants (14)
+     a. TRUE, FALSE, NIL, ENV, etc..
+

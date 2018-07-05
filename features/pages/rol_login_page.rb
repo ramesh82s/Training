@@ -5,6 +5,7 @@ puts "Executing #{__FILE__}"
   # page_url("https://www.huntington.com/")
   text_field(:username, :id => "personal-username")
   text_field(:password, :id=> "personal-password")
+  drop(:password, :id=> "personal-password")
   button(:login, :class=> "button--white")
   def form_field_order
   %w{

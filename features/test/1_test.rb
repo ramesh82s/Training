@@ -1,3 +1,7 @@
+puts [1,2,3,4].join
+puts File.join('a','b')
+puts File
+
 require 'yaml'
 # puts "Executing #{__FILE__}"
 # a=[1,2,3,4]
