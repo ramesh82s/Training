@@ -18,13 +18,13 @@ Basic Ruby
 07. Array
 08. Hash
 09. Operators
-     a. Arithmetic Operators
-     b. Comparison Operators
-     c. Assignment Operators
-     d. Parallel Assignment
-     e. Bitwise Operators
-     f. Logical Operators
-     g. Ternary Operator
+     a. Arithmetic Operators => 1.+, 2.-, 3.*, 4./, 5.%, 6.**
+     b. Comparison Operators => 1.==, 2.!=, 3.>, 4.>=, 5.<, 6.<=, 7.<=>, 8.===, 9..eql? 10.equal?
+     c. Assignment Operators => 1.=, 2.+=, 3.-=, 4.*=, 5./=, 6.%=, 7.**=
+     d. Parallel Assignment => a,b,c=1,2,3 a=b=c a,b = b,a
+     e. Bitwise Operators => | binary or, & binary and, ^ binary xor, ~ binary ones complement, << binary left shift, >> binary right shift
+     f. Logical Operators => or ||, and &&, not !
+     g. Ternary Operator a=b ? (puts true) : (puts false)
      h. Range Operators
         Ranges as Sequences, Ranges as Conditions, Ranges as Intervals
      i. defined? Operators
@@ -53,7 +53,7 @@ Basic Ruby
      g. undef method-name
      h. constructor method
 14. Blocks
-     a. yield statement
+     a. yield stat                                                                        Dvement
      b. call statement
      b. BEGIN, END
 15. Modules
@@ -71,6 +71,7 @@ Basic Ruby
 18. Iterators
      a. each
      b. collect
+     c. map
 19. Exception
      a. begin, end
      b. rescue
@@ -91,7 +92,7 @@ Advanced Ruby
      e. class method
      f. to_s method
      g. access control
-        public, private and protected methods
+        public (default), private and protected methods
      h. inheritance
      i. method Overriding
      j. Operator Overloading
