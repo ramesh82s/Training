@@ -1,3 +1,4 @@
+puts "Executing: #{__FILE__}"
 require 'rspec'
 describe "First Test"do
   it "returnt Do" do

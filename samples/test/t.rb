@@ -1,3 +1,4 @@
+puts "Executing: #{__FILE__}"
 module Polindrome
 def self.poly(word)
   reversedword = word.reverse

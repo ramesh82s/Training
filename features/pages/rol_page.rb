@@ -1,7 +1,7 @@
-puts "Executing #{__FILE__}"
+puts "Executing: #{__FILE__}"
 class RolPage
   def fill_all_form_data(locator)
-    h = YAML.load(File.read("C:/Users/ssc/RubymineProjects/Training/features/support/data/data_source/input_data/rol_login_page_data.yaml"))
+    h = YAML.load(File.read("#{Dir.pwd}/features/support/data/data_source/input_data/rol_login_page_data.yaml"))
     h.each do|master_key,master_value|
       if master_key == locator.upcase.gsub(' ','_')
         @fillable_form_fields = self.form_field_order()
@@ -26,10 +26,10 @@ class RolPage
   #   begin
       #To use dynamic data, put the ruby to be evaluated within <%=  %>, ie
       # <%= 5+3 %>
-       YAML.load(File.read("C:/Users/ssc/RubymineProjects/Training/features/support/data/data_source/input_data/rol_login_page_data.yaml")) || Hash.new( {} )
+      #  YAML.load(File.read("C:/Users/rames/RubymineProjects/Training/features/support/data/data_source/input_data/rol_login_page_data.yaml")) || Hash.new( {} )
  # rescue Errno::ENOENT => e
-        puts "----------------------------------------"
-        puts Hash.new({})
+ #        puts "----------------------------------------"
+ #        puts Hash.new({})
     # end
   # end
 end

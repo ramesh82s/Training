@@ -1,3 +1,4 @@
+puts "Executing: #{__FILE__}"
 # class Att
 #
 # puts m2

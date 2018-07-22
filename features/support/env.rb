@@ -1,4 +1,4 @@
-puts "Executing #{__FILE__}"
+puts "Executing: #{__FILE__}"
 
 #### Adding project files path (Gems path are already loaded by defaults)to the $LOAD_PATH ####
 project_dir = File.join(File.dirname(__FILE__), '..', '..')
@@ -13,8 +13,10 @@ $LOAD_PATH.unshift(data_dir, data_classes_dir, pages_dir)
 require 'watir'
 require 'page-object'
 require 'rol_page'
+#No need to add chromedriver, geckodriver to the ruby bin folder when include the statement require 'webdriver'
+require 'webdrivers'
 
-# require 'page-object/page_factory'
+# require 'page-object/page_factory'geckodriver
 # World(PageObject::PageFactory)
 
 

@@ -1,3 +1,4 @@
+puts "Executing: #{__FILE__}"
 require 'selenium-webdriver'
 Given(/^I navigate to amazon application$/) do
         @driver=Selenium::WebDriver.for(:firefox)

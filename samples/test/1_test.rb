@@ -1,3 +1,4 @@
+puts "Executing: #{__FILE__}"
 puts [1,2,3,4].join
 puts File.join('a','b')
 puts File

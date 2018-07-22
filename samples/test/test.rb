@@ -1,3 +1,4 @@
+puts "Executing: #{__FILE__}"
 str = "This is my string having vowels"
 
 puts str.gsub(/[a e i o u]/,'9')

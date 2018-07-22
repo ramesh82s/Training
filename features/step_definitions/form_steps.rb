@@ -1,4 +1,4 @@
-puts "Executing #{__FILE__}"
+puts "Executing: #{__FILE__}"
 # require 'watir' - declared in env.rb
 When(/^the user navigates to the rol link$/) do
   @browser = Watir::Browser.new :firefox
