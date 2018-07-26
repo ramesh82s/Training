@@ -24,7 +24,15 @@ Dir.chdir('C:\Users\rseralathan\IdeaProjects\Training') do
   puts Dir.pwd
 end
 puts Dir.pwd
-Dir.mkdir(File.join(Dir.pwd, 'sample2')) # Makes a new directory named by <i>string</i>, with permissions
-
-
-
+Dir.mkdir(File.join(Dir.pwd, 'to_be_deleted1')) # Makes a new directory named by <i>string</i>, with permissions
+Dir.rmdir(File.join(Dir.pwd, 'to_be_deleted1')) # Deletes the named directory.
+Dir.mkdir(File.join(Dir.pwd, 'to_be_deleted2')) # Makes a new directory named by <i>string</i>, with permissions
+Dir.delete(File.join(Dir.pwd, 'to_be_deleted2')) # Deletes the named directory.
+Dir.mkdir(File.join(Dir.pwd, 'to_be_deleted3')) # Makes a new directory named by <i>string</i>, with permissions
+Dir.unlink(File.join(Dir.pwd, 'to_be_deleted3')) # Deletes the named directory.
+puts Dir.home #C:\Users\rseralathan
+p Dir.glob('*') #["perl_examples", "ruby_examples", "test"]
+p Dir.glob('[a-z]*') #["perl_examples", "ruby_examples", "test"]
+p Dir[Dir.pwd] << :a << 1 # ["C:/Users/rseralathan/IdeaProjects/Training/samples", :a, 1]
+p Dir.[](Dir.pwd) << :b << 2 #["C:/Users/rseralathan/IdeaProjects/Training/samples", :b, 2]
+p Dir.exist?("ruby_examples") #true
