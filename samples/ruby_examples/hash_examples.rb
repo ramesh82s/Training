@@ -1,69 +1,27 @@
-jobcode = {
-           :agrmnt => [1101,2101],
-           :service => [1201,2201]
-          }
-acquire_job_cd=0
-standardize_job_cd=1
-puts jobcode[:agrmnt][acquire_job_cd]
-puts jobcode[:agrmnt][standardize_job_cd]
+p Hash.[](:a=>1,'b'=>2, "c":3) #{:a=>1, "b"=>2, :c=>3}
+p Hash[:b=>2] #{:b=>2}
+p h=Hash.new # {}
+p h = {:b=>2, c: :d} # {:b=>2, :c=>:d}
+p h={:a => :A, :b => :B, :c => {:h1=>:v1,:h2=>:v2}} #{:a=>:A, :b=>:B, :c=>{:h1=>:v1, :h2=>:v2}}
+p h={:a => :A, :b => :B, {:h1=>:v1,:h2=>:v2} => :c } #{:a=>:A, :b=>:B, {:h1=>:v1, :h2=>:v2}=>:c}
+p h={a: :A, b: :B} #{:a=>:A, :b=>:B}
 
-a=2
- a==1? (puts 1) : (puts 2)
+p hash_of_array_in_value = {:a1 => [1.3, 2, 3], :a2 => [4, 5, 6]} #{:a1=>[1.3, 2, 3], :a2=>[4, 5, 6]}
+p hash_of_array_in_value[:a1][2] # 3
+hash_of_array_in_value.each {|k, v| v.each {|subvalue| puts "Key: #{k} Value: #{subvalue}" }}  #Key: a1 Value: 1     Key: a1 Value: 2     Key: a1 Value: 3     Key: a2 Value: 4     Key: a2 Value: 5     Key: a2 Value: 6
+hash_of_array_in_value.map {|k, v| v.map{|subvalue| puts "Key: #{k} Value: #{subvalue}"}}         #Key: a1 Value: 1     Key: a1 Value: 2     Key: a1 Value: 3     Key: a2 Value: 4     Key: a2 Value: 5     Key: a2 Value: 6
+hash_of_array_in_value.collect {|k, v| v.collect{|subvalue| puts "Key: #{k} Value: #{subvalue}"}} #Key: a1 Value: 1     Key: a1 Value: 2     Key: a1 Value: 3     Key: a2 Value: 4     Key: a2 Value: 5     Key: a2 Value: 6
 
-#-------Create Hash-----------------------------------------------------------
-class Person
-  p Hash.[](:a=>1)
-  p Hash[:b=>2]
-  h={:a => :A, :b => :B}
-  h={a: :A, b: :B}
-  h.each {|k,v| puts "Key is #{k} and Value is #{v}"}
-  puts h.inspect
-  puts h.invert
-  #---
-  Hash[a: :A, b: :B].each {|k,v| puts "Key is #{k} and Value is #{v}"}
-  #---
-  {a: :A, b: :B}.each {|k,v| puts "Key is #{k} and Value is #{v}"}
-  #---
-  a=[:a,1,:b,2,:c,3]
-  puts Hash[:a,1,:b,2,:c,3]
-  puts Hash[:a=>1,:b=>2,:c=>3]
-  #---
-  h=Hash.new(:default1)
-  h.default = :default2
-  h[:book] = :B
-  h[:code] = :C
-  puts h
-  puts h[:default]
-  #---
-  h ={}
-  h[:book] = :b
-  h[:code] = :c
-  h[:dot] = :d
-  puts h
-  puts h.length
-  #---
-  h={:A=>[:a,:b,:c], :D=>[:e,:f,:g]}
-  h.each {|k,v| puts "Key is #{k} and Value is #{v}"}
-  #---
-  h={:A=>{:a=> :a1}, :D=>{:d=>:d1}}
-  h.each {|k,v| puts "Key is #{k} and Value is #{v}"}
-  #------------------------------------------------------------------
-  h.flatten.each {|k| puts "#{k}"}
-  #------------------------------------------------------------------
-  a=[[1,2],[3,4],[5,6]]
-  f=a.flatten
-  puts f[-1]
-  #-------Pass Has to method-----------------------------------
-    def self.create(params)
-      @name = params[:name]
-      @age  = params[:age]
-      return @name, @age
-    end
-  puts Person.create({name: "John Doe", age: 27})
-  end
-#------------
+p hash_of_hash_in_value = {:h1 => {:h11=>:v11 ,:h12=>:v12 }, :h2 => {:h21=>:v21 ,:h22=>:v22 }} #{:a1=>[1.3, 2, 3], :a2=>[4, 5, 6]}
+p hash_of_hash_in_value[:h1][:h11] # v11
+hash_of_hash_in_value.each {|mainkey, mainvalue| mainvalue.each {|subkey, subvalue| puts "Key: #{mainkey} SubKey: #{subkey} Value: #{subvalue}" }}  #Key: h1 SubKey: h11 Value: v11 Key: h1 SubKey: h12 Value: v12 Key: h2 SubKey: h21 Value: v21 Key: h2 SubKey: h22 Value: v22
+hash_of_hash_in_value.map {|mainkey, mainvalue| mainvalue.map {|subkey, subvalue| puts "Key: #{mainkey} SubKey: #{subkey} Value: #{subvalue}" }}  #Key: h1 SubKey: h11 Value: v11 Key: h1 SubKey: h12 Value: v12 Key: h2 SubKey: h21 Value: v21 Key: h2 SubKey: h22 Value: v22
+hash_of_hash_in_value.collect {|mainkey, mainvalue| mainvalue.collect {|subkey, subvalue| puts "Key: #{mainkey} SubKey: #{subkey} Value: #{subvalue}" }}  #Key: h1 SubKey: h11 Value: v11 Key: h1 SubKey: h12 Value: v12 Key: h2 SubKey: h21 Value: v21 Key: h2 SubKey: h22 Value: v22
 
-h={1=>2, 3=>4}
-p h.collect {|i,j| puts "key is #{i} and value is #{j}"}
+p hash_of_array_in_key={[1,2,3]=>:a,[4,5,6]=>:a2}   #{[1, 2, 3]=>:a, [4, 5, 6]=>:a2}
+p hash_of_array_in_value[[1,2,3]]  #nil
+hash_of_array_in_key.each {|k, v| k.each{|subkey| puts "SubKey: #{subkey} Value: #{v}"}}       #SubKey: 1 Value: a SubKey: 2 Value: a SubKey: 3 Value: a SubKey: 4 Value: a2 SubKey: 5 Value: a2 SubKey: 6 Value: a2
+hash_of_array_in_key.map {|k, v| k.map{|subkey| puts "SubKey: #{subkey} Value: #{v}"}}         #SubKey: 1 Value: a SubKey: 2 Value: a SubKey: 3 Value: a SubKey: 4 Value: a2 SubKey: 5 Value: a2 SubKey: 6 Value: a2
+hash_of_array_in_key.collect {|k, v| k.collect{|subkey| puts "SubKey: #{subkey} Value: #{v}"}} #SubKey: 1 Value: a SubKey: 2 Value: a SubKey: 3 Value: a SubKey: 4 Value: a2 SubKey: 5 Value: a2 SubKey: 6 Value: a2
 
 
