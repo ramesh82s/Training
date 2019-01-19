@@ -73,27 +73,27 @@ p "123.12".to_i(base=10) #=> 123
 p "123.12".to_f             #=> 123.12
 p "Ruby".to_str             #=> "Ruby"
 p "Ruby".to_s               #=> "Ruby"
-p "ruby".upcase!            #=> "RUBY"                                        # To change string to caps
-p "RUBY".downcase!          #=> "ruby"                                        # To change string to lower case
-p "rUBY".swapcase!          #=> "Ruby"                                        # To change interchange case
-p "RUBY".capitalize!        #=> "Ruby"                                        # To change first letter to upper case
-p "1,2,,3,4,,".split(',')         #=> ["1", "2", "", "3", "4"]         # To puts string into array based on the given delimiter character
+p "ruby".upcase!            #=> "RUBY"                                # To change string to caps
+p "RUBY".downcase!          #=> "ruby"                                # To change string to lower case
+p "rUBY".swapcase!          #=> "Ruby"                                # To change interchange case
+p "RUBY".capitalize!        #=> "Ruby"                                # To change first letter to upper case
+p "1,2,,3,4,,".split(',')         #=> ["1", "2", "", "3", "4"] # To puts string into array based on the given delimiter character
 p [1,2,3].join('-'.to_s)
-p "Ruby".reverse!           #=> "ybuR"                                        # To convert the string in backwards
-p "Hello" << " world"   #=> "hello world"                                     # Join two stings
-p "ruby oop".to_sym     #=> :"ruby oop"                                       # Convert string in to symbol
-p "hello".ljust(20)      #=> "hello               "                    # To make string to constant length and add given character at right
+p "Ruby".reverse!           #=> "ybuR"                                # To convert the string in backwards
+p "Hello" << " world"   #=> "hello world"                             # Join two stings
+p "ruby oop".to_sym     #=> :"ruby oop"                               # Convert string in to symbol
+p "hello".ljust(20)      #=> "hello               "            # To make string to constant length and add given character at right
 p "hello".ljust(20, '1234')   #=> "hello123412341234123"
-p "hello".rjust(20)      #=> "               hello"                    # To make string to constant length and add given character at left
+p "hello".rjust(20)      #=> "               hello"            # To make string to constant length and add given character at left
 p "hello".rjust(20, '1234')   #=> "123412341234123hello"
-p "hello".center(20)      #=> "       hello        "                    # To make string to constant length and add given character at left and right
+p "hello".center(20)      #=> "       hello        "            # To make string to constant length and add given character at left and right
 p "hello".center(20, '1234')   #=> "1234123hello12341234"
-p "    hello    ".strip    #=> "hello"                                        # To remove the spaces from left and right of the string
-p "    hello    ".lstrip   #=> "hello    "                                    # To remove the spaces from left of the string
-p "    hello    ".rstrip   #=> "    hello"                                    # To remove the spaces from right of the string
-p "    hello".chomp("hello")   #=> "    hello"                       # To remove the end of the character from a given string
+p "    hello    ".strip    #=> "hello"                                # To remove the spaces from left and right of the string
+p "    hello    ".lstrip   #=> "hello    "                            # To remove the spaces from left of the string
+p "    hello    ".rstrip   #=> "    hello"                            # To remove the spaces from right of the string
+p "    hello".chomp("hello")   #=> "    hello"                # To remove the end of the character from a given string
 p "    hello".chomp("llo")         #=> "he"
-p "aeiou".gsub(/[a e i o u]/,'r')                                             # To replace the character with the given character
+p "aeiou".gsub(/[a e i o u]/,'r')                                     # To replace the character with the given character
 
 
 

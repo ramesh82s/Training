@@ -10,6 +10,17 @@ When(/^the user navigates to the rol link$/) do
   @current_page.goto("https://www.huntington.com/")
 end
 
+When(/^the user opens the browser$/) do
+  @browser = Watir::Browser.new :firefox
+  @browser
+  # @current_page.goto("https://www.huntington.com/")
+  # @browser = Watir::Browser.new :chrome
+  #  visit_page(RolLoginPage)
+  @current_page = GmailLoginPage.new(@browser)
+  @current_page.goto("https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
+  sleep 10
+end
+
 When /^the user (?:fills|modify)(?: (?:and)( captures))? the (?:.+) (?:page|section|application|pleat)(?: (?:with|for|where) (.*))?$/ do |capture,locator|
 
   if locator.nil?
@@ -32,6 +43,7 @@ And(/^the user provides credential$/) do
 end
 
 And(/^the user clicks the (.*)$/) do |page_element|
+   # @current_page.span(:class=>"RveJvd snByac").click
   # Watir::Wait.until(25) {@current_page.send(page_element.tr(' ','_').downcase + "_element").exists?}
   @current_page.send(page_element.tr(' ','_').downcase + "_element").click
   # @current_page.close
