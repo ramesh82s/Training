@@ -1,24 +1,14 @@
 puts "Executing: #{__FILE__}"
 # require 'watir' - declared in env.rb
-When(/^the user navigates to the rol link$/) do
+When(/^the user navigates to the (.*) page$/) do|page_name|
   @browser = Watir::Browser.new :firefox
-  @browser
+  page_class_name = page_name.split.map(&:capitalize).join(' ').gsub(' ','')+'Page'
+  @current_page = Object.const_get(page_class_name).new(@browser)
+  url = @current_page.get_url(page_name.gsub(/ .*/,''))
+  @current_page.goto(url)
   # @current_page.goto("https://www.huntington.com/")
   # @browser = Watir::Browser.new :chrome
   #  visit_page(RolLoginPage)
-  @current_page = RolLoginPage.new(@browser)
-  @current_page.goto("https://www.huntington.com/")
-end
-
-When(/^the user opens the browser$/) do
-  @browser = Watir::Browser.new :firefox
-  @browser
-  # @current_page.goto("https://www.huntington.com/")
-  # @browser = Watir::Browser.new :chrome
-  #  visit_page(RolLoginPage)
-  @current_page = GmailLoginPage.new(@browser)
-  @current_page.goto("https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&followup=https%3A%2F%2Faccounts.google.com%2Fb%2F0%2FAddMailService&flowName=GlifWebSignIn&flowEntry=ServiceLogin")
-  sleep 10
 end
 
 When /^the user (?:fills|modify)(?: (?:and)( captures))? the (?:.+) (?:page|section|application|pleat)(?: (?:with|for|where) (.*))?$/ do |capture,locator|
@@ -61,3 +51,4 @@ end
 And(/^the user hits the enter key$/) do
   @current_page.send_keys(:return)
 end
+

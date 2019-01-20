@@ -25,6 +25,10 @@ module DataHelper
     end
   end
 
+  def get_url(identifier)
+    h = YAML.load(File.read("#{Dir.pwd}/features/support/data/data_source/input_data/links.yaml"))
+    h['DEV'][identifier.upcase]
+  end
   # def get_data_from_yml_file(file_path)
   #   begin
   #To use dynamic data, put the ruby to be evaluated within <%=  %>, ie

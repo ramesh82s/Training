@@ -1,12 +1,22 @@
 Feature: Login into ROL
 
   Scenario: Login to ROL
-    When the user navigates to the rol link
+    When the user navigates to the rol login page
     And the user fills the login page with login credentials
     And the user clicks the login
 #  And the user answer the security question
 #  And the user hits the enter key
 # update from Branch1
+
+  Scenario: Login to Facebook
+    When the user navigates to the facebook login page
+    And the user fills the login page with login credentials for facebook
+    And the user clicks the login
+
+  Scenario: Login to Ebay
+    When the user navigates to the ebay login page
+    And the user fills the login page with login credentials for Ebay
+    And the user clicks the login
 
   Scenario: User log in to Gmail browser
     Given the user opens the Gmail browser
