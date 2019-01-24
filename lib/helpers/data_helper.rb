@@ -1,6 +1,6 @@
 module DataHelper
   def fill_all_form_data(locator)
-    h = YAML.load(File.read("#{Dir.pwd}/features/support/data/data_source/input_data/rol_login_page_data.yaml"))
+    h = YAML.load(File.read("#{Dir.pwd}/features/support/data/data_source/input_data/login_page_data.yaml"))
     puts "-----------------------------"
     puts h
     puts locator
@@ -33,7 +33,7 @@ module DataHelper
   #   begin
   #To use dynamic data, put the ruby to be evaluated within <%=  %>, ie
   # <%= 5+3 %>
-  #  YAML.load(File.read("C:/Users/rames/RubymineProjects/Training/features/support/data/data_source/input_data/rol_login_page_data.yaml")) || Hash.new( {} )
+  #  YAML.load(File.read("C:/Users/rames/RubymineProjects/Training/features/support/data/data_source/input_data/login_page_data.yaml")) || Hash.new( {} )
   # rescue Errno::ENOENT => e
   #        puts "----------------------------------------"
   #        puts Hash.new({})

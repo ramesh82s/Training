@@ -1,6 +1,6 @@
 puts "Executing: #{__FILE__}"
 # require 'page-object' - declared in env.rb
-  class RolLoginPage
+  class Huntingtonlogin
   include PageObject
   # page_url("https://www.huntington.com/")
   text_field(:username, :id => "personal-username")

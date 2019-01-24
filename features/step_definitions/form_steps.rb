@@ -2,13 +2,10 @@ puts "Executing: #{__FILE__}"
 # require 'watir' - declared in env.rb
 When(/^the user navigates to the (.*) page$/) do|page_name|
   @browser = Watir::Browser.new :firefox
-  page_class_name = page_name.split.map(&:capitalize).join(' ').gsub(' ','')+'Page'
+  page_class_name = page_name.capitalize.gsub(' ','')
   @current_page = Object.const_get(page_class_name).new(@browser)
-  url = @current_page.get_url(page_name.gsub(/ .*/,''))
+  url = @current_page.get_url(page_class_name)
   @current_page.goto(url)
-  # @current_page.goto("https://www.huntington.com/")
-  # @browser = Watir::Browser.new :chrome
-  #  visit_page(RolLoginPage)
 end
 
 When /^the user (?:fills|modify)(?: (?:and)( captures))? the (?:.+) (?:page|section|application|pleat)(?: (?:with|for|where) (.*))?$/ do |capture,locator|

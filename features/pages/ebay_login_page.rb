@@ -1,6 +1,6 @@
 puts "Executing: #{__FILE__}"
 # require 'page-object' - declared in env.rb
-class EbayLoginPage
+class Ebaylogin
   include PageObject
   text_field(:username, :id=>"userid")
   text_field(:password, :id=>"pass")

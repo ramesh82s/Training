@@ -1,4 +1,4 @@
 DEV:
-  ROL: "https://www.huntington.com/"
-  FACEBOOK: "https://www.facebook.com/"
-  EBAY: "https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2F"
+  HUNTINGTONLOGIN: "https://www.huntington.com/"
+  FACEBOOKLOGIN: "https://www.facebook.com/"
+  EBAYLOGIN: "https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2F"

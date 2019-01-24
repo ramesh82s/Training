@@ -59,8 +59,8 @@ p a
 # end
 
 # require 'yaml'
-#      puts  YAML.load(File.open("C:/OAO_Testing/features/rol_login_page_data.yaml"))
-#      h = YAML.load(File.open("C:/OAO_Testing/features/rol_login_page_data.yaml"))
+#      puts  YAML.load(File.open("C:/OAO_Testing/features/login_page_data.yaml"))
+#      h = YAML.load(File.open("C:/OAO_Testing/features/login_page_data.yaml"))
 # h.each do|k1,v1|
 #   puts "Key1 #{k1}"
 #   puts "Value1 #{v1}"

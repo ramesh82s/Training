@@ -1,6 +1,7 @@
 puts "Executing: #{__FILE__}"
 # require 'page-object' - declared in env.rb
-class FacebookLoginPage
+#class FacebookLoginPage
+ class Facebooklogin
   include PageObject
   text_field(:username, :id=>"email")
   text_field(:password, :id=>"pass")

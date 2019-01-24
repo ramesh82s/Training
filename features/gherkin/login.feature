@@ -1,7 +1,7 @@
 Feature: Login into ROL
 
-  Scenario: Login to ROL
-    When the user navigates to the rol login page
+  Scenario: Login to Huntington
+    When the user navigates to the huntington login page
     And the user fills the login page with login credentials
     And the user clicks the login
 #  And the user answer the security question

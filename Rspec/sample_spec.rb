@@ -2,7 +2,7 @@ puts "Executing: #{__FILE__}"
 require 'rspec'
 describe "First Test"do
   it "returnt Do" do
-    expect('r').to eql('r')
+    expect('r').to eql('r1')
   end
   it "will expect file not to exist" do
     expect(File).not_to exist("path/to/file")
