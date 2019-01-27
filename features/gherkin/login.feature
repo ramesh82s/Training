@@ -27,7 +27,7 @@ Feature: Login into ROL
 #    And the user clicks the login
 
   Scenario: User log in to Gmail browser
-    Given the user opens the Gmail browser
+    Given the user opens the Gmail browser1
 #    And the user fills the login page with emailorphone
     And the user fills the login page with gmail id
     And the user clicks the next

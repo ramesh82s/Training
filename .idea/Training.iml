@@ -5,14 +5,40 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="jruby-9.1.17.0-p0" jdkType="JRUBY_SDK" />
+    <orderEntry type="jdk" jdkName="jruby-9.2.5.0-p0" jdkType="JRUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.16.3, jruby-9.1.17.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.8.0, jruby-9.1.17.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.9.17, jruby-9.1.17.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.8.1, jruby-9.1.17.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.2.1, jruby-9.1.17.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.5.1, jruby-9.1.17.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="webdrivers (v3.2.4, jruby-9.1.17.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="backports (v3.11.4, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.3, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.17.2, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.9.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.4, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber (v3.1.2, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-core (v3.2.1, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-expressions (v6.0.1, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-tag_expressions (v1.1.1, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cucumber-wire (v0.0.1, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="data_magic (v1.2, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.3, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faker (v1.9.1, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ffi (v1.10.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="gherkin (v5.1.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.5.2, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.1.2, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net_http_ssl_fix (v0.0.10, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.10.1, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="page-object (v2.2.5, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="page_navigation (v0.10, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v1.3.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec (v3.8.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.8.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.8.2, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.8.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.8.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.2.2, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="selenium-webdriver (v3.141.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="watir (v6.16.5, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="webdrivers (v3.6.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="yml_reader (v0.7, jruby-9.2.5.0-p0) [gem]" level="application" />
   </component>
 </module>
