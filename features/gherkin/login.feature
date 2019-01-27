@@ -1,22 +1,30 @@
 Feature: Login into ROL
 
+  Background:
+    When the user opens the huntington login page
+
   Scenario: Login to Huntington
-    When the user navigates to the huntington login page
+#    When the user navigates to the huntington login page
     And the user fills the login page with login credentials
     And the user clicks the login
 #  And the user answer the security question
 #  And the user hits the enter key
 # update from Branch1
 
-  Scenario: Login to Facebook
-    When the user navigates to the facebook login page
-    And the user fills the login page with login credentials for facebook
-    And the user clicks the login
+  Scenario Outline: Login
+    When the user navigates to the <link> page
+    And the user fills the login page with <credentials>
+    And the user clicks the <login>
+    Examples:
+      | link           | credentials                    | login |
+      | facebook login | login credentials for facebook | login |
+      | ebay login     | login credentials for Ebay     | login |
 
-  Scenario: Login to Ebay
-    When the user navigates to the ebay login page
-    And the user fills the login page with login credentials for Ebay
-    And the user clicks the login
+
+#  Scenario: Login to Ebay
+#    When the user navigates to the ebay login page
+#    And the user fills the login page with login credentials for Ebay
+#    And the user clicks the login
 
   Scenario: User log in to Gmail browser
     Given the user opens the Gmail browser
