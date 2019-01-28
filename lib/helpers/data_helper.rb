@@ -29,6 +29,11 @@ module DataHelper
     h = YAML.load(File.read("#{Dir.pwd}/features/support/data/data_source/input_data/links.yaml"))
     h['DEV'][identifier.upcase]
   end
+  def get_message(error_message)
+    h = YAML.load(File.read("#{Dir.pwd}/features/support/data/data_source/input_data/expected_values.yaml"))
+    h['DEV'][error_message.upcase.gsub(' ','_')]
+  end
+
   # def get_data_from_yml_file(file_path)
   #   begin
   #To use dynamic data, put the ruby to be evaluated within <%=  %>, ie

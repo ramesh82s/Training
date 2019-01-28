@@ -56,3 +56,8 @@ And(/^the user enters ZIP code$/) do
   @current_page.text_field(:id => "zipCodeModalInputField").set '43220'
   @current_page.a(:id => "go-button-zip-modal").click
 end
+
+And(/^the user verifies the error message (.*)$/) do|error|
+  error_from_web = @current_page.send(error.tr(' ', '_').downcase + "_element").text # get error message from web page
+  expect(error_from_web).to eq(get_message(error))    #derive message from input yaml file to compare with web error message
+end
