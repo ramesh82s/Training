@@ -5,6 +5,7 @@ class Ebaylogin
   text_field(:username, :id=>"userid")
   text_field(:password, :id=>"pass")
   button(:login, :id=>"sgnBt")
+  p(:not_a_match, :id=>"errf")
 
   def form_field_order
     %w{

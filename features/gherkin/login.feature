@@ -1,7 +1,7 @@
 Feature: Login into ROL
 
-  Background:
-    When the user opens the huntington login page
+#  Background:
+#    When the user opens the huntington login page
 
   Scenario: Login to Huntington
 #    When the user navigates to the huntington login page
@@ -15,10 +15,12 @@ Feature: Login into ROL
     When the user navigates to the <link> page
     And the user fills the login page with <credentials>
     And the user clicks the <login>
+    And the user verifies the error message not a match
     Examples:
-      | link           | credentials                    | login |
-      | facebook login | login credentials for facebook | login |
-      | ebay login     | login credentials for Ebay     | login |
+      | link       | credentials                        | login |
+    #  | facebook login | login credentials for facebook | login |
+      | ebay login | invalid login credentials for Ebay | login |
+
 
 
 #  Scenario: Login to Ebay
