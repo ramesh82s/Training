@@ -4,3 +4,6 @@ DEV:
   EBAYLOGIN: "https://signin.ebay.com/ws/eBayISAPI.dll?SignIn&ru=https%3A%2F%2Fwww.ebay.com%2F"
   BANKOFAMERICA: "https://promo.bankofamerica.com/multiproduct/?cm_mmc=ENT-Consumer-_-MSN-PS-_-bank%20of%20america-_-Control%20-%20High%20Volume%20-%20Bank%20Of%20America%20Exact-Bank%20Of%20America%20Exact&&msclkid=4a02fa7e45d21412e917a6347f847041&gclid=CJXHwIW6h-ACFZaGxQIdYx4BiQ&gclsrc=ds"
   BANKOFAMERICAHOME: "https://www.bankofamerica.com/"
+  W3SCHOOLS: "https://www.w3schools.com/html/html_tables.asp"
+  EBAY: "https://www.ebay.com/deals"
+  PNCBANK: "https://www.pnc.com/en/personal-banking.html"

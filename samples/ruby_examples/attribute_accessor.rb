@@ -10,7 +10,6 @@ class Acc
   attr_accessor :name
   def mod
     name = @name+ " Chiranth Chidarth"
-    name
   end
 end
 

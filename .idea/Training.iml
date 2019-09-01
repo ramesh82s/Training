@@ -19,10 +19,10 @@
     <orderEntry type="library" scope="PROVIDED" name="cucumber-wire (v0.0.1, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="data_magic (v1.2, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.3, jruby-9.2.5.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="faker (v1.9.1, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="faker (v1.9.3, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.10.0, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="gherkin (v5.1.0, jruby-9.2.5.0-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.5.2, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="i18n (v1.5.3, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.1.2, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="net_http_ssl_fix (v0.0.10, jruby-9.2.5.0-p0) [gem]" level="application" />
@@ -30,6 +30,7 @@
     <orderEntry type="library" scope="PROVIDED" name="page-object (v2.2.5, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="page_navigation (v0.10, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v1.3.0, jruby-9.2.5.0-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="report_builder (v1.8, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec (v3.8.0, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.8.0, jruby-9.2.5.0-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.8.2, jruby-9.2.5.0-p0) [gem]" level="application" />

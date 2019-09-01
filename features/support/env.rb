@@ -12,10 +12,12 @@ data_classes_dir = File.join(data_dir, 'data_classes')
 lib_dir = File.join(Dir.pwd,'lib/helpers')
 $LOAD_PATH.unshift(data_dir, data_classes_dir, pages_dir,lib_dir)
 #### Requiring the Gems for execution ####
-require 'watir'
+# require 'watir'
+load "watir.rb"
 require 'page-object'
 #No need to add chromedriver, geckodriver to the ruby bin folder when include the statement require 'webdriver'
 require 'webdrivers'
+require 'report_builder'
 
 require 'data_helper'
 include DataHelper

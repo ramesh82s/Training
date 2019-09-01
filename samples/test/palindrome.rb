@@ -1,6 +1,6 @@
 class Pal
   def chk_palindrome
-    @string = "1234567899876543211"
+    @string = "hello"
     @len = @string.length           #gives total number of letters in a string, its size of string
     @rev_string = ""
 
