@@ -17,8 +17,8 @@ Feature: Testing for Bank of America Guest login page
 
     When the user navigates to the bank of america home page
     And the user clicks the get started
-    And the user fills the login page with zip code
-    And the user clicks the go
-    And the user clicks the adv safe balance
+    #And the user fills the login page with zip code
+    #And the user clicks the go
+     And the user clicks the adv safe balance
    # And the user fills the login page with personal information
 #    And the user clicks the save for later option

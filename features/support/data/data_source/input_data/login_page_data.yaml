@@ -31,9 +31,24 @@ INVALID_LOGIN_CREDENTIALS_FOR_EBAY:
 ZIP_CODE:
   ZIP: '43220'
 
-PERSONAL INFORMATION:
+SIGN_UP_INFORMATION:
   FIRST_NAME: 'uma'
-  MIDDLE_NAME: 'heggatta'
   LAST_NAME: 'padmanabhaiah'
-  SUFFIX: 'II'
+  EMAIL_ID: 'uma.ons@gmail.com'
+  RE_ENTER_EMAIL: 'uma.ons@gmail.com'
+  NEW_PASSWORD: 'Uhp@1982'
+  MONTH: 'Jul'
+  DAY: '2'
+  YEAR: '1982'
+
+
+ROW DATA:
+
+
+REGISTER_INFORMATION:
+  BUSINESS_NAME: 'umaramesh'
+  EMAIL: 'uma.ons@gmail.com'
+  RE_ENTER_EMAIL: 'uma.ons@gmail.com'
+  PASSWORD: 'Srb@1982'
+  PHONE_NUMBER: '6146154891'
 
